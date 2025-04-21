@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/styles.css" rel="stylesheet">
+    <link href="../css/output.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Waves</title>
+</head>
+<body>
+  <div id="loader-meditacion" class="loader">
+      <div class="spinner">Cargando...</div>
+  </div>
+
+    <header class="header">
+        <div class="container flex justify-between items-center">
+            <div class="logo-header">
+                <a class="flex justify-between items-center" href="index.html">
+                    <img src="../assets/img/logo1.png" alt="logo">
+                    <span>WAVES</span>
+                </a>
+            </div>
+            
+            <img src="../assets/img/modo-oscuro.png" alt="icono modo oscuro">
+        </div>
+    </header>
+    <div class="intro-meditacion container">
+        <div>
+            <h3>Meditación</h3>
+            <p>La meditación es una práctica milenaria que ha sido utilizada por diversas culturas y tradiciones a lo largo de la historia. Su objetivo principal es cultivar la atención plena, la calma mental y el bienestar emocional. En un mundo cada vez más acelerado y lleno de distracciones, la meditación se ha convertido en una herramienta esencial para encontrar equilibrio y serenidad. En nuestro caso utilizamos los llamados sonidos binaurales.</p> <br>
+            <h3>Sonidos binaurales</h3>
+            <p>Los sonidos puros que se reproducen interfieren entre sí cuando tienen un sonido cercano, pero no idéntico. Cuando cada sonido se envía a un oído diferente, no hay interacción física entre las ondas; sin embargo, el cerebro genera una interferencia dentro de la cabeza: el llamado ritmo binaural. Para crear un ritmo binaural, cada oído debe recibir su señal específica. Por lo tanto, los ritmos binaurales solo funcionan con auriculares.</p>
+            
+        </div>
+        <img src="../assets/img/dmitry-osipenko-vc9tEl-ON6o-unsplash.jpg" alt="">
+    </div>
+
+    <div class="cont">
+        <div id="canvas-container"></div>
+    </div>
+    
+
+    <footer>
+        <div class="container flex justify-between items-start ">
+            <div class="footer-cont">
+                <h4>¿QUIENES SOMOS?</h4>
+                <a href="#">MEDITACIÓN PARA CONCENTRARTE</a>
+                <a href="#">MEDITACIÓN PARA DORMIR</a>
+                <a href="#">MEDITACIÓN PARA RELAJARTE</a>
+                <a href="#">MEDITACIÓN PARA ESTUDIAR</a>
+                <a href="#">MEDITACIÓN PARA ELIMINAR EL ESTRÉS</a>
+            </div>
+            <div class="footer-cont">
+                <h4>¿QUIENES SOMOS?</h4>
+                <a href="">CONTACTANOS</a>
+                <a href="">CENTRO DE AYUDA</a>
+                <a href="">ACERCA DE NOSOTROS</a>
+            </div>
+            <div class="footer-cont">
+                <a href="#"><img src="../assets/icons/icons8-facebook-50(2).png" alt="icono"></a>
+                <a href="#"><img src="../assets/icons/icons8-youtube-50(1).png" alt="icono"></a>
+                <a href="#"><img src="../assets/icons/icons8-instagram-50(1).png" alt="icono"></a>
+                <a href="#"><img src="../assets/icons/icons8-twitterx-50(1).png" alt="icono"></a>
+                <a href="#"><img src="../assets/icons/icons8-github-50(1).png" alt="icono"></a>
+            </div>
+        </div>
+        
+    </footer>
+  
+  <script src="../js/concentracion.js"></script>
+  <script src="../js/dormir.js"></script>
+  <script src="../js/estres.js"></script>
+  <script src="../js/ritmo-cardiaco.js"></script>
+  <script src="../js/preparacion.js"></script>
+  <script src="../js/meditacion.js"></script>
+  <script>
+    window.addEventListener('load', function() {
+      setTimeout(function(){
+        document.getElementById('loader-meditacion').style.display = 'none';
+      }, 2000);
+    });
+  </script>
+</body>
+</html>
